@@ -1,0 +1,7 @@
+// 1.21.8	-999999999-01-01T00:00:00	pvp mod/Tags for minecraft:item
+356e5712d77ba570290a508f85ec3b8a0f251914 data/minecraft/tags/item/axes.json
+c9b7d5792dc7684ec569f1fc2e14884da23a9377 data/minecraft/tags/item/enchantable/armor.json
+3b75e4054123f1d8fea233311f7a6b4c02fd49a9 data/minecraft/tags/item/enchantable/mining.json
+ab7d8efaafaaf78a04601cbb1c551f6b7393a450 data/minecraft/tags/item/enchantable/sword.json
+356e5712d77ba570290a508f85ec3b8a0f251914 data/minecraft/tags/item/pickaxes.json
+356e5712d77ba570290a508f85ec3b8a0f251914 data/minecraft/tags/item/shovels.json

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "multi_bench",
+  "key": {
+    "b": "minecraft:blackstone",
+    "n": "minecraft:netherite_ingot",
+    "o": "minecraft:obsidian",
+    "s": "minecraft:stone",
+    "t": "minecraft:nether_star"
+  },
+  "pattern": [
+    "bbs",
+    "oto",
+    "ssn"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:bedrock"
+  }
+}

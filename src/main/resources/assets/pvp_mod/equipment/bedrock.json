@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "pvp_mod:bedrock_layer_1"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "pvp_mod:bedrock_layer_2"
+      }
+    ]
+  }
+}

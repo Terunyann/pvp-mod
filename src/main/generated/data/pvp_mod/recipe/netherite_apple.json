@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:netherite_ingot",
+    "pvp_mod:diamond_apple"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pvp_mod:netherite_apple"
+  }
+}

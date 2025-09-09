@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "a": "pvp_mod:bedrock_axe",
+    "i": "pvp_mod:bedrock_ingot",
+    "p": "pvp_mod:bedrock_pickaxe",
+    "s": "pvp_mod:bedrock_shovel"
+  },
+  "pattern": [
+    "aip",
+    " i ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pvp_mod:bedrock_paxel"
+  }
+}

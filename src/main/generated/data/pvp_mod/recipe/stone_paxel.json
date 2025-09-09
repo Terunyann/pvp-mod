@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": "minecraft:stone_axe",
+    "b": "minecraft:stick",
+    "p": "minecraft:stone_pickaxe",
+    "s": "minecraft:stone_shovel"
+  },
+  "pattern": [
+    "abp",
+    " b ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pvp_mod:stone_paxel"
+  }
+}

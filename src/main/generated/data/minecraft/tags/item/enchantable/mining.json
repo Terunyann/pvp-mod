@@ -1,0 +1,14 @@
+{
+  "values": [
+    "pvp_mod:wooden_paxel",
+    "pvp_mod:stone_paxel",
+    "pvp_mod:iron_paxel",
+    "pvp_mod:golden_paxel",
+    "pvp_mod:diamond_paxel",
+    "pvp_mod:netherite_paxel",
+    "pvp_mod:bedrock_paxel",
+    "pvp_mod:bedrock_axe",
+    "pvp_mod:bedrock_pickaxe",
+    "pvp_mod:bedrock_shovel"
+  ]
+}

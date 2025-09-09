@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "multi_bench",
+  "key": {
+    "a": "minecraft:apple",
+    "d": "minecraft:diamond"
+  },
+  "pattern": [
+    "ddd",
+    "dad",
+    "ddd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pvp_mod:diamond_apple"
+  }
+}

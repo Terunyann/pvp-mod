@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "multi_bench",
+  "key": {
+    "b": "minecraft:bedrock",
+    "i": "pvp_mod:bedrock_ingot"
+  },
+  "pattern": [
+    "b",
+    "i",
+    "i"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pvp_mod:bedrock_shovel"
+  }
+}
