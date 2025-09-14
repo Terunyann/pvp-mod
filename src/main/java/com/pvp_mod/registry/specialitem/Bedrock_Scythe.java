@@ -1,14 +1,11 @@
 package com.pvp_mod.registry.specialitem;
 
-import net.minecraft.entity.ExperienceOrbEntity;
-import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -71,11 +68,9 @@ public class Bedrock_Scythe extends Item {
         serverWorld.spawnParticles(ParticleTypes.EXPLOSION, center.x - 2, center.y + 2, center.z + 4, 1, 0, 0, 0, 0);
         serverWorld.spawnParticles(ParticleTypes.EXPLOSION, center.x, center.y + 3, center.z + 5, 1, 0, 0, 0, 0);
 
-
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 4));
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20, 255));
 
         return ActionResult.SUCCESS;
     }
-
 }

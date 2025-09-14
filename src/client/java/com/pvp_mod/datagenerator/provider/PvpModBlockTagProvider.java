@@ -21,6 +21,7 @@ public class PvpModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+
         valueLookupBuilder(PAXEL_MINEABLE)
                 .addOptionalTag(BlockTags.AXE_MINEABLE)
                 .addOptionalTag(BlockTags.HOE_MINEABLE)

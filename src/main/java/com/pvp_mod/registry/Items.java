@@ -34,7 +34,7 @@ public abstract class Items {
                     .rarity(Rarity.EPIC)
     );
 
-    public static final Item ENCHANTED_DIAMOND_APPLE = register("enchanted_diamond_apple", Item::new,
+    public static final Item ENCHANTED_DIAMOND_APPLE = register("enchanted_diamond_apple", Glint_Items::new,
             new Item.Settings().food(ENCHANTED_DIAMOND_APPLE_COMPONENT, ENCHANTED_DIAMOND_APPLE_CONSUMABLE_COMPONENT)
                     .rarity(Rarity.EPIC)
     );
@@ -190,13 +190,6 @@ public abstract class Items {
             new Item.Settings().armor(PvpModArmorMaterial.BEDROCK, EquipmentType.BOOTS)
                     .rarity(Rarity.EPIC)
     );
-
-
-
-    public static <T extends Item> T register(String name, T item) {
-        return Registry.register(Registries.ITEM, PvpMod.id(name), item);
-    }
-
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.

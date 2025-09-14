@@ -1,21 +1,34 @@
 package com.pvp_mod.datagenerator.provider;
 
+import com.pvp_mod.PvpMod;
 import com.pvp_mod.registry.Items;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Item;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
 public class PvpModItemTagProvider extends FabricTagProvider.ItemTagProvider {
-    public PvpModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registries) {
-        super(output, registries);
+    public PvpModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
+
+    public static final TagKey<Item> ENCHANTED_FOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(PvpMod.MOD_ID, "enchanted_item"));
+
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        
+
+        valueLookupBuilder(ENCHANTED_FOOD)
+                .add(Items.ENCHANTED_DIAMOND_APPLE,
+                     Items.ENCHANTED_NETHERITE_APPLE
+                );
+
         valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE)
                 .add(Items.BEDROCK_HELMET,
                      Items.BEDROCK_CHESTPLATE,
