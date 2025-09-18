@@ -1,6 +1,7 @@
 package com.pvp_mod;
 
 import com.pvp_mod.list.enums.PvpModArmorMaterial;
+import com.pvp_mod.list.enums.PvpModToolMaterial;
 import com.pvp_mod.registry.Enchantment;
 import com.pvp_mod.registry.Items;
 import net.fabricmc.api.ModInitializer;
@@ -24,7 +25,7 @@ public class PvpMod implements ModInitializer {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
         LOGGER.info("Loading...");
         PvpModArmorMaterial.load();
-        PvpModArmorMaterial.load();
+        PvpModToolMaterial.load();
         Enchantment.load();
 
 
@@ -72,7 +73,7 @@ public class PvpMod implements ModInitializer {
     }
 
     public static Identifier id(String path) {
-        return Identifier.of(MOD_ID,path);
+        return Identifier.of(MOD_ID, path);
     }
 
 }

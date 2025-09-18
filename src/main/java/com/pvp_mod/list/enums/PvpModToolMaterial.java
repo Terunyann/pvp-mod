@@ -14,4 +14,7 @@ public class PvpModToolMaterial {
             30,
             ItemTags.NETHERITE_TOOL_MATERIALS
     );
+
+    public static void load() {
+    }
 }

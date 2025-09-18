@@ -1,7 +1,10 @@
 // 1.21.8	-999999999-01-01T00:00:00	pvp mod/Tags for minecraft:item
-356e5712d77ba570290a508f85ec3b8a0f251914 data/minecraft/tags/item/axes.json
+d2ed8fad5f98e1adac19e8506a0e1d8b371080f2 data/minecraft/tags/item/axes.json
 c9b7d5792dc7684ec569f1fc2e14884da23a9377 data/minecraft/tags/item/enchantable/armor.json
-3b75e4054123f1d8fea233311f7a6b4c02fd49a9 data/minecraft/tags/item/enchantable/mining.json
+48c83e89349e6ccf58c588b6304e143ee35485c6 data/minecraft/tags/item/enchantable/durability.json
+fecc492f3c5c0ba8120fdc028f9ed9f066b5a564 data/minecraft/tags/item/enchantable/mining.json
 ab7d8efaafaaf78a04601cbb1c551f6b7393a450 data/minecraft/tags/item/enchantable/sword.json
 356e5712d77ba570290a508f85ec3b8a0f251914 data/minecraft/tags/item/pickaxes.json
 356e5712d77ba570290a508f85ec3b8a0f251914 data/minecraft/tags/item/shovels.json
+369a629e1fb33eae55962211486dee23a5e69378 data/pvp_mod/tags/item/bedrock_tool_materials.json
+aefddb8fab8b1d2a813339ad75a24ba27e7be422 data/pvp_mod/tags/item/enchanted_item.json

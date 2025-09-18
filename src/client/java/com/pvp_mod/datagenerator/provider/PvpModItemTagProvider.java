@@ -19,26 +19,29 @@ public class PvpModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
 
     public static final TagKey<Item> ENCHANTED_FOOD = TagKey.of(RegistryKeys.ITEM, Identifier.of(PvpMod.MOD_ID, "enchanted_item"));
-
+    public static final TagKey<Item> BEDROCK_TOOL_MATERIALS = TagKey.of(RegistryKeys.ITEM, Identifier.of(PvpMod.MOD_ID, "bedrock_tool_materials"));
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
+        valueLookupBuilder(BEDROCK_TOOL_MATERIALS)
+                .add(Items.BEDROCK_INGOT);
+
         valueLookupBuilder(ENCHANTED_FOOD)
                 .add(Items.ENCHANTED_DIAMOND_APPLE,
-                     Items.ENCHANTED_NETHERITE_APPLE
+                        Items.ENCHANTED_NETHERITE_APPLE
                 );
 
         valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE)
                 .add(Items.BEDROCK_HELMET,
-                     Items.BEDROCK_CHESTPLATE,
-                     Items.BEDROCK_LEGGINGS,
-                     Items.BEDROCK_BOOTS
+                        Items.BEDROCK_CHESTPLATE,
+                        Items.BEDROCK_LEGGINGS,
+                        Items.BEDROCK_BOOTS
                 );
 
         valueLookupBuilder(ItemTags.SWORD_ENCHANTABLE)
                 .add(Items.BEDROCK_SWORD,
-                     Items.ZAZAZAZAL_SWORD
+                        Items.ZAZAZAZAL_SWORD
                 )
         ;
 
@@ -52,37 +55,57 @@ public class PvpModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                         Items.BEDROCK_PAXEL,
                         Items.BEDROCK_AXE,
                         Items.BEDROCK_PICKAXE,
-                        Items.BEDROCK_SHOVEL
+                        Items.BEDROCK_SHOVEL,
+                        Items.BEDROCK_BATTLEAXE
                 );
 
         valueLookupBuilder(ItemTags.PICKAXES)
                 .add(Items.WOODEN_PAXEL,
-                     Items.STONE_PAXEL,
-                     Items.IRON_PAXEL,
-                     Items.GOLDEN_PAXEL,
-                     Items.DIAMOND_PAXEL,
-                     Items.NETHERITE_PAXEL,
-                     Items.BEDROCK_PAXEL
+                        Items.STONE_PAXEL,
+                        Items.IRON_PAXEL,
+                        Items.GOLDEN_PAXEL,
+                        Items.DIAMOND_PAXEL,
+                        Items.NETHERITE_PAXEL,
+                        Items.BEDROCK_PAXEL
                 );
 
         valueLookupBuilder(ItemTags.SHOVELS)
                 .add(Items.WOODEN_PAXEL,
-                     Items.STONE_PAXEL,
-                     Items.IRON_PAXEL,
-                     Items.GOLDEN_PAXEL,
-                     Items.DIAMOND_PAXEL,
-                     Items.NETHERITE_PAXEL,
-                     Items.BEDROCK_PAXEL
+                        Items.STONE_PAXEL,
+                        Items.IRON_PAXEL,
+                        Items.GOLDEN_PAXEL,
+                        Items.DIAMOND_PAXEL,
+                        Items.NETHERITE_PAXEL,
+                        Items.BEDROCK_PAXEL
                 );
 
         valueLookupBuilder(ItemTags.AXES)
                 .add(Items.WOODEN_PAXEL,
-                     Items.STONE_PAXEL,
-                     Items.IRON_PAXEL,
-                     Items.GOLDEN_PAXEL,
-                     Items.DIAMOND_PAXEL,
-                     Items.NETHERITE_PAXEL,
-                     Items.BEDROCK_PAXEL
+                        Items.STONE_PAXEL,
+                        Items.IRON_PAXEL,
+                        Items.GOLDEN_PAXEL,
+                        Items.DIAMOND_PAXEL,
+                        Items.NETHERITE_PAXEL,
+                        Items.BEDROCK_PAXEL,
+                        Items.BEDROCK_BATTLEAXE
+                );
+
+        valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(Items.BEDROCK_HELMET,
+                        Items.BEDROCK_CHESTPLATE,
+                        Items.BEDROCK_LEGGINGS,
+                        Items.BEDROCK_BOOTS,
+                        Items.BEDROCK_SWORD,
+                        Items.ZAZAZAZAL_SWORD,
+                        Items.WOODEN_PAXEL,
+                        Items.STONE_PAXEL,
+                        Items.IRON_PAXEL,
+                        Items.GOLDEN_PAXEL,
+                        Items.DIAMOND_PAXEL,
+                        Items.NETHERITE_PAXEL,
+                        Items.BEDROCK_PAXEL,
+                        Items.BEDROCK_BATTLEAXE,
+                        Items.BEDROCK_SCYTHE
                 );
     }
 }

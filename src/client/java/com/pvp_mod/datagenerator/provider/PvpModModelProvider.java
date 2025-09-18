@@ -28,7 +28,6 @@ public class PvpModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Items.SOFTSERVE_ICECREAM, Models.GENERATED);
         itemModelGenerator.register(Items.BEDROCK_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(Items.BEDROCK_INGOT, Models.GENERATED);
-        itemModelGenerator.register(Items.BRUSH, Models.GENERATED);
 
         itemModelGenerator.register(Items.BEDROCK_AXE, Models.HANDHELD);
         itemModelGenerator.register(Items.BEDROCK_BATTLEAXE, Models.HANDHELD);
@@ -38,6 +37,7 @@ public class PvpModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Items.BEDROCK_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(Items.BEDROCK_SWORD, Models.HANDHELD);
         itemModelGenerator.register(Items.ZAZAZAZAL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(Items.BRUSH, Models.HANDHELD);
 
         itemModelGenerator.register(Items.WOODEN_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(Items.STONE_PAXEL, Models.HANDHELD);
@@ -47,9 +47,9 @@ public class PvpModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(Items.NETHERITE_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(Items.BEDROCK_PAXEL, Models.HANDHELD);
 
-        itemModelGenerator.register(Items.BEDROCK_HELMET, Models.HANDHELD);
-        itemModelGenerator.register(Items.BEDROCK_CHESTPLATE, Models.HANDHELD);
-        itemModelGenerator.register(Items.BEDROCK_LEGGINGS, Models.HANDHELD);
-        itemModelGenerator.register(Items.BEDROCK_BOOTS, Models.HANDHELD);
+        itemModelGenerator.register(Items.BEDROCK_HELMET, Models.GENERATED);
+        itemModelGenerator.register(Items.BEDROCK_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(Items.BEDROCK_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(Items.BEDROCK_BOOTS, Models.GENERATED);
     }
 }

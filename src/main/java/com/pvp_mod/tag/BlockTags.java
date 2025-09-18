@@ -6,6 +6,6 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class BlockTags {
-        public static final TagKey<Block> PAXEL_MINEABLE = TagKey.of(RegistryKeys.BLOCK, Identifier.of("pvp_mod", "paxel_mineable"));
-    }
+    public static final TagKey<Block> PAXEL_MINEABLE = TagKey.of(RegistryKeys.BLOCK, Identifier.of("pvp_mod", "paxel_mineable"));
+}
 

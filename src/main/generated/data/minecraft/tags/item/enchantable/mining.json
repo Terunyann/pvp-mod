@@ -9,6 +9,7 @@
     "pvp_mod:bedrock_paxel",
     "pvp_mod:bedrock_axe",
     "pvp_mod:bedrock_pickaxe",
-    "pvp_mod:bedrock_shovel"
+    "pvp_mod:bedrock_shovel",
+    "pvp_mod:bedrock_battleaxe"
   ]
 }

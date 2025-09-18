@@ -26,6 +26,7 @@ public class Enchantment {
         PvpMod.LOGGER.info("Registering EnchantmentEffects for" + PvpMod.MOD_ID);
     }
 
-    public static void load() {}
+    public static void load() {
+    }
 
 }

@@ -13,7 +13,7 @@ public class FoodList {
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 180 * 20, 3), 1))
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 15 * 20, 1), 1))
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 120 * 20, 1), 1))
-            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 180 *20, 0), 1))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 180 * 20, 0), 1))
             .build();
     public static final FoodComponent AMETHYST_APPLE_COMPONENT = new FoodComponent.Builder()
             .nutrition(4)

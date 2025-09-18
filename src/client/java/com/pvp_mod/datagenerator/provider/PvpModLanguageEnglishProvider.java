@@ -13,7 +13,7 @@ public class PvpModLanguageEnglishProvider extends FabricLanguageProvider {
         super(dataOutput, "en_us", registryLookup);
     }
 
-        @Override
+    @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(Items.AMETHYST_APPLE, "amethyst apple");
         translationBuilder.add(Items.DIAMOND_APPLE, "diamond apple");
@@ -55,5 +55,5 @@ public class PvpModLanguageEnglishProvider extends FabricLanguageProvider {
         translationBuilder.addEnchantment(Enchantment.INDESTRUCTIBLE, "indestructible");
         translationBuilder.addEnchantment(Enchantment.ASSASSINATION, "assassination");
 
-        }
+    }
 }

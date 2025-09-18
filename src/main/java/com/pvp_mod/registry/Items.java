@@ -4,6 +4,7 @@ import com.pvp_mod.PvpMod;
 import com.pvp_mod.list.enums.PvpModArmorMaterial;
 import com.pvp_mod.list.enums.PvpModToolMaterial;
 import com.pvp_mod.registry.specialitem.*;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.equipment.EquipmentType;
@@ -21,7 +22,6 @@ import static com.pvp_mod.list.FoodList.*;
 public abstract class Items {
 
 //Foods
-
 
 
     public static final Item AMETHYST_APPLE = register("amethyst_apple", Item::new,
@@ -148,7 +148,7 @@ public abstract class Items {
                     .maxDamage(64).rarity(Rarity.COMMON)
     );
 
-    public static final Item IRON_PAXEL = register( "iron_paxel", Item::new,
+    public static final Item IRON_PAXEL = register("iron_paxel", Item::new,
             new Item.Settings().tool(ToolMaterial.IRON, com.pvp_mod.tag.BlockTags.PAXEL_MINEABLE, 7, -2.4f, 6)
                     .maxDamage(500).rarity(Rarity.COMMON)
     );
@@ -178,7 +178,7 @@ public abstract class Items {
 
     public static final Item BEDROCK_CHESTPLATE = register("bedrock_chestplate", Item::new,
             new Item.Settings().armor(PvpModArmorMaterial.BEDROCK, EquipmentType.CHESTPLATE)
-                    .rarity(Rarity.EPIC)
+                    .rarity(Rarity.EPIC).equippable(EquipmentSlot.CHEST).maxDamage(2100000000)
     );
 
     public static final Item BEDROCK_LEGGINGS = register("bedrock_leggings", Item::new,
@@ -204,6 +204,7 @@ public abstract class Items {
         return item;
     }
 
-    public static void initialize() {}
+    public static void initialize() {
+    }
 
 }
