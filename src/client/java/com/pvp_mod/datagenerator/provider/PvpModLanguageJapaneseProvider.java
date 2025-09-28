@@ -35,7 +35,7 @@ public class PvpModLanguageJapaneseProvider extends FabricLanguageProvider {
         translationBuilder.add(Items.BEDROCK_HOE, "岩盤のクワ");
         translationBuilder.add(Items.BEDROCK_PICKAXE, "岩盤のツルハシ");
         translationBuilder.add(Items.BEDROCK_SCYTHE, "岩盤の大鎌");
-        translationBuilder.add(Items.BEDROCK_SHOVEL, "岩盤のショベル");
+        translationBuilder.add(Items.BEDROCK_SHOVEL, "岩盤のシャベル");
         translationBuilder.add(Items.BEDROCK_SWORD, "岩盤の剣");
         translationBuilder.add(Items.ZAZAZAZAL_SWORD, "レッドソード");
 

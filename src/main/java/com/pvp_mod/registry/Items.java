@@ -25,7 +25,7 @@ public abstract class Items {
 
 
     public static final Item AMETHYST_APPLE = register("amethyst_apple", Item::new,
-            new Item.Settings().food(AMETHYST_APPLE_COMPONENT, AMETHYST_APPLE_CONSUMABLE_COMPONENT)
+            new Glint_Items.Settings().food(AMETHYST_APPLE_COMPONENT, AMETHYST_APPLE_CONSUMABLE_COMPONENT)
                     .rarity(Rarity.EPIC)
     );
 
@@ -40,7 +40,7 @@ public abstract class Items {
     );
 
     public static final Item EMERALD_APPLE = register("emerald_apple", Item::new,
-            new Item.Settings().food(EMERALD_APPLE_COMPONENT, EMERALD_APPLE_CONSUMABLE_COMPONENT)
+            new Glint_Items.Settings().food(EMERALD_APPLE_COMPONENT, EMERALD_APPLE_CONSUMABLE_COMPONENT)
                     .rarity(Rarity.EPIC)
     );
 
@@ -60,7 +60,7 @@ public abstract class Items {
     );
 
     public static final Item KIWI = register("kiwi", Item::new,
-            new Item.Settings().food(KIWI_COMPONENT, KIWI_CONSUMABLE_COMPONENT)
+            new Glint_Items.Settings().food(KIWI_COMPONENT, KIWI_CONSUMABLE_COMPONENT)
                     .rarity(Rarity.EPIC)
     );
 
@@ -92,12 +92,12 @@ public abstract class Items {
 //Tools
 
     public static final Item BEDROCK_AXE = register("bedrock_axe", Item::new,
-            new Item.Settings().axe(PvpModToolMaterial.BEDROCK, 16, -3.4f)
+            new Item.Settings().axe(PvpModToolMaterial.BEDROCK, 13, -3.5f)
                     .rarity(Rarity.EPIC)
     );
 
     public static final Item BEDROCK_BATTLEAXE = register("bedrock_battleaxe", Bedrock_Battleaxe::new,
-            new Item.Settings().axe(PvpModToolMaterial.BEDROCK, 18, -3.4f)
+            new Item.Settings().axe(PvpModToolMaterial.BEDROCK, 16, -3.5f)
                     .useCooldown(12).rarity(Rarity.EPIC)
     );
 
@@ -107,7 +107,7 @@ public abstract class Items {
     );
 
     public static final Item BEDROCK_PICKAXE = register("bedrock_pickaxe", Item::new,
-            new Item.Settings().pickaxe(PvpModToolMaterial.BEDROCK, 10, -2.4f)
+            new Item.Settings().pickaxe(PvpModToolMaterial.BEDROCK, 7, -2.8f)
                     .rarity(Rarity.EPIC)
     );
 
@@ -117,12 +117,12 @@ public abstract class Items {
     );
 
     public static final Item BEDROCK_SHOVEL = register("bedrock_shovel", Item::new,
-            new Item.Settings().shovel(PvpModToolMaterial.BEDROCK, 9, -2.4f)
+            new Item.Settings().shovel(PvpModToolMaterial.BEDROCK, 6, -3.3f)
                     .rarity(Rarity.EPIC)
     );
 
     public static final Item BEDROCK_SWORD = register("bedrock_sword", Item::new,
-            new Item.Settings().sword(PvpModToolMaterial.BEDROCK, 17, -2.4f)
+            new Item.Settings().sword(PvpModToolMaterial.BEDROCK, 11, -2.4f)
                     .rarity(Rarity.EPIC)
     );
 
@@ -178,7 +178,7 @@ public abstract class Items {
 
     public static final Item BEDROCK_CHESTPLATE = register("bedrock_chestplate", Item::new,
             new Item.Settings().armor(PvpModArmorMaterial.BEDROCK, EquipmentType.CHESTPLATE)
-                    .rarity(Rarity.EPIC).equippable(EquipmentSlot.CHEST).maxDamage(2100000000)
+                    .rarity(Rarity.EPIC).maxDamage(2100000000)
     );
 
     public static final Item BEDROCK_LEGGINGS = register("bedrock_leggings", Item::new,
