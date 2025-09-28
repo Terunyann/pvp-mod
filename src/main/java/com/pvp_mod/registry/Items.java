@@ -4,7 +4,6 @@ import com.pvp_mod.PvpMod;
 import com.pvp_mod.list.enums.PvpModArmorMaterial;
 import com.pvp_mod.list.enums.PvpModToolMaterial;
 import com.pvp_mod.registry.specialitem.*;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.equipment.EquipmentType;
