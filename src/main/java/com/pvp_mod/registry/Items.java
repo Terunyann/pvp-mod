@@ -91,7 +91,7 @@ public abstract class Items {
 //Tools
 
     public static final Item BEDROCK_AXE = register("bedrock_axe", Item::new,
-            new Item.Settings().axe(PvpModToolMaterial.BEDROCK, 13, -3.5f)
+            new Item.Settings().axe(PvpModToolMaterial.BEDROCK, 14, -3.5f)
                     .rarity(Rarity.EPIC)
     );
 
@@ -121,7 +121,7 @@ public abstract class Items {
     );
 
     public static final Item BEDROCK_SWORD = register("bedrock_sword", Item::new,
-            new Item.Settings().sword(PvpModToolMaterial.BEDROCK, 11, -2.4f)
+            new Item.Settings().sword(PvpModToolMaterial.BEDROCK, 10, -2.4f)
                     .rarity(Rarity.EPIC)
     );
 
@@ -163,7 +163,7 @@ public abstract class Items {
     );
 
     public static final Item BEDROCK_PAXEL = register("bedrock_paxel", Item::new,
-            new Item.Settings().tool(PvpModToolMaterial.BEDROCK, com.pvp_mod.tag.BlockTags.PAXEL_MINEABLE, 17, -2.4f, 30)
+            new Item.Settings().tool(PvpModToolMaterial.BEDROCK, com.pvp_mod.tag.BlockTags.PAXEL_MINEABLE, 10, -2.4f, 30)
                     .rarity(Rarity.EPIC)
     );
 
@@ -205,5 +205,4 @@ public abstract class Items {
 
     public static void initialize() {
     }
-
 }
