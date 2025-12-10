@@ -25,7 +25,7 @@ public class FoodList {
             // The duration is in ticks, 20 ticks = 1 second
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 150 * 20, 3), 1))
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 15 * 20, 1), 1))
-            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 100 * 20, 1), 1))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 100 * 20, 0), 1))
             .build();
     public static final FoodComponent DIAMOND_APPLE_COMPONENT = new FoodComponent.Builder()
             .nutrition(4)
