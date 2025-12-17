@@ -1,0 +1,84 @@
+package terunyann_.pvp_mod;
+
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import terunyann_.pvp_mod.list.enums.PvpModArmorMaterial;
+import terunyann_.pvp_mod.list.enums.PvpModToolMaterial;
+import terunyann_.pvp_mod.registry.Blocks;
+import terunyann_.pvp_mod.registry.Creative_tab;
+import terunyann_.pvp_mod.registry.Items;
+
+import static terunyann_.pvp_mod.registry.Creative_tab.CUSTOM_ITEM_GROUP;
+import static terunyann_.pvp_mod.registry.Creative_tab.CUSTOM_ITEM_GROUP_KEY;
+
+public class PvpMod implements ModInitializer {
+    public static final Logger LOGGER = LoggerFactory.getLogger("pvp_mod");
+    public static final String MOD_ID = "pvp_mod";
+
+    @Override
+    public void onInitialize() {
+        Items.load();
+        Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
+        LOGGER.info("Loading...");
+        PvpModArmorMaterial.load();
+        PvpModToolMaterial.load();
+        Creative_tab.load();
+        Blocks.load();
+
+
+// Register items to the custom item group.
+        ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+            itemGroup.add(Items.AMETHYST_APPLE);
+            itemGroup.add(Items.DIAMOND_APPLE);
+            itemGroup.add(Items.ENCHANTED_DIAMOND_APPLE);
+            itemGroup.add(Items.EMERALD_APPLE);
+            itemGroup.add(Items.NETHERITE_APPLE);
+            itemGroup.add(Items.ENCHANTED_NETHERITE_APPLE);
+            itemGroup.add(Items.HAMBURGER);
+            itemGroup.add(Items.KIWI);
+            itemGroup.add(Items.HAMBURGER);
+            itemGroup.add(Items.SLICED_BREAD);
+            itemGroup.add(Items.SOFTSERVE_ICECREAM);
+
+            itemGroup.add(Items.BEDROCK_INGOT);
+            itemGroup.add(Items.BEDROCK_UPGRADE_SMITHING_TEMPLATE);
+            itemGroup.add(Items.BRUSH);
+
+            itemGroup.add(Items.BEDROCK_AXE);
+            itemGroup.add(Items.BEDROCK_BATTLEAXE);
+            itemGroup.add(Items.BEDROCK_HOE);
+            itemGroup.add(Items.BEDROCK_PICKAXE);
+            itemGroup.add(Items.BEDROCK_SCYTHE);
+            itemGroup.add(Items.BEDROCK_SHOVEL);
+            itemGroup.add(Items.BEDROCK_SWORD);
+            itemGroup.add(Items.ZAZAZAZAL_SWORD);
+
+            itemGroup.add(Items.WOODEN_PAXEL);
+            itemGroup.add(Items.STONE_PAXEL);
+            itemGroup.add(Items.GOLDEN_PAXEL);
+            itemGroup.add(Items.IRON_PAXEL);
+            itemGroup.add(Items.DIAMOND_PAXEL);
+            itemGroup.add(Items.NETHERITE_PAXEL);
+            itemGroup.add(Items.BEDROCK_PAXEL);
+
+            itemGroup.add(Items.BEDROCK_HELMET);
+            itemGroup.add(Items.BEDROCK_CHESTPLATE);
+            itemGroup.add(Items.BEDROCK_LEGGINGS);
+            itemGroup.add(Items.BEDROCK_BOOTS);
+            itemGroup.add(Items.NEW_BEACH_SPORTS);
+
+            itemGroup.add(Blocks.NAZO_BLOCK);
+            itemGroup.add(Blocks.BEDROCK_BLOCK);
+        });
+    }
+
+    public static Identifier id(String path) {
+        return Identifier.of(MOD_ID, path);
+    }
+
+}
