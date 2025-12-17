@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -31,9 +31,9 @@ loom {
 }
 
 fabricApi {
-    configureDataGeneration() {
-        client = true
-    }
+	configureDataGeneration {
+		client = true
+	}
 }
 
 dependencies {
@@ -44,6 +44,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	
 }
 
 processResources {
