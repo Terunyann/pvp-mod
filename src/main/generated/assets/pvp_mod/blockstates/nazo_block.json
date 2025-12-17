@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pvp_mod:block/nazo_block"
+    }
+  }
+}

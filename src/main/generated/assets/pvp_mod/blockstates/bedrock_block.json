@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pvp_mod:block/bedrock_block"
+    }
+  }
+}
