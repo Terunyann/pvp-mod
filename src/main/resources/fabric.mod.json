@@ -2,27 +2,27 @@
   "schemaVersion": 1,
   "id": "pvp_mod",
   "version": "${version}",
-  "name": "pvp mod",
+  "name": "Pvp Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Terunyann_"
+    "Me!"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-  "license": "Apache 2.0",
+  "license": "MIT",
   "icon": "assets/pvp_mod/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.pvp_mod.PvpMod"
+      "terunyann_.pvp_mod.PvpMod"
     ],
     "client": [
-      "com.pvp_mod.PvpModClient"
+      "terunyann_.pvp_mod.PvpModClient"
     ],
     "fabric-datagen": [
-      "com.pvp_mod.datagenerator.PvpModDataGenerator"
+      "terunyann_.pvp_mod.PvpModDataGenerator"
     ]
   },
   "mixins": [
@@ -33,8 +33,8 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=0.17.2",
-    "minecraft": "~1.21.8",
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.10",
     "java": ">=21",
     "fabric-api": "*"
   },
