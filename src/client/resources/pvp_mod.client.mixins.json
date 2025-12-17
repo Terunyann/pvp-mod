@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.pvp_mod.mixin.client",
+  "package": "terunyann_.pvp_mod.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "ExampleClientMixin"
