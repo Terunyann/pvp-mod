@@ -4,7 +4,7 @@
   "group": "multi_bench",
   "key": {
     "b": "minecraft:snowball",
-    "m": "minecraft:milk_bucket",
+    "m": "pvp_mod:milk_bottle",
     "s": "minecraft:sugar",
     "w": "minecraft:wheat"
   },

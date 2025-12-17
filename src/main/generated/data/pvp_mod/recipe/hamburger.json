@@ -5,7 +5,7 @@
   "key": {
     "b": "minecraft:cooked_beef",
     "j": "minecraft:baked_potato",
-    "m": "minecraft:milk_bucket",
+    "m": "pvp_mod:milk_bottle",
     "p": "minecraft:bread"
   },
   "pattern": [
